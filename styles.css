@@ -1,10 +1,10 @@
-/* This is your stylesheet */
+/* First import your reset and Google fonts */
 
 @import url(reset.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* Apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -15,14 +15,121 @@ html {
   box-sizing: inherit;
 }
 
+/* Global and mobile styles start here */
 
 body {
   font-family: 'Inter', sans-serif;
-  padding: 3rem;
-  background: lightblue;
+}
+
+/* Typography Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.3;
 }
 
 h1 {
-  font-size: 2.225rem;
+  font-size: 3.052rem;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Image Styles */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section Styles */
+
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero-text {
+  width: 100%;
+  padding: 3rem;
+}
+
+.hero-illustration {
+  width: 100%;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  body {
+    background: orangered;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  body {
+    background: burlywood;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  body {
+    background: aquamarine;
+  }
+
+  .hero-section {
+    flex-direction: row;
+  }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  body {
+    background: goldenrod;
+  }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+  body {
+    background: yellowgreen;
+  }
+
 }
